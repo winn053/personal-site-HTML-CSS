@@ -1,0 +1,53 @@
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.background-gradient {
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(53,51,205,1) 100%);
+  background-size: 180% 180%;
+}
+
+.background-green {
+  background-color: #AFEB8F;
+}
+
+.background-blue {
+  background-color: #002f7b !important;
+}
+
+.text-bg-blue {
+  color: #002f7b !important;
+}
+
+.img-hero {
+  border-radius: 10px;
+}
+
+.img-about-me {
+  border-radius: 40px;
+}
+
+.text-name {
+  color: #afeb8f;
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+  font-weight: 300;
+  background-color: white;
+  border-radius: 200px;
+}
+
+.text-generic {
+  color: #002f7b;
+}
+
+.card-text-title-color, .text-green {
+  color: #afeb8f;
+}
+
+.rounded-button {
+  border-radius: 100px;
+}
