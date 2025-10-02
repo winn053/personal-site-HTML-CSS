@@ -1,23 +1,32 @@
+:root {
+  --main-green-color: #afeb8f;
+  --main-blue-color: #002f7b;
+  --main-white-color: white;
+}
+
 body {
   font-family: 'Nunito Sans', sans-serif;
 }
 
 .background-gradient {
-  background: rgb(0,0,0);
-  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(53,51,205,1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(53, 51, 205, 1) 100%
+  );
   background-size: 180% 180%;
 }
 
 .background-green {
-  background-color: #AFEB8F;
+  background-color: var(--main-green-color);
 }
 
 .background-blue {
-  background-color: #002f7b !important;
+  background-color: var(--main-blue-color) !important;
 }
 
 .text-bg-blue {
-  color: #002f7b !important;
+  color: var(--main-blue-color) !important;
 }
 
 .img-hero {
@@ -29,23 +38,24 @@ body {
 }
 
 .text-name {
-  color: #afeb8f;
+  color: var(--main-green-color);
   text-align: center;
 }
 
 .title {
   text-align: center;
   font-weight: 300;
-  background-color: white;
+  background-color: var(--main-white-color);
   border-radius: 200px;
 }
 
 .text-generic {
-  color: #002f7b;
+  color: var(--main-blue-color);
 }
 
-.card-text-title-color, .text-green {
-  color: #afeb8f;
+.card-text-title-color,
+.text-green {
+  color: var(--main-green-color);
 }
 
 .rounded-button {

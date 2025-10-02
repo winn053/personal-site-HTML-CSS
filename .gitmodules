@@ -1,0 +1,3 @@
+[submodule "projects/money-app"]
+	path = projects/money-app
+	url = https://github.com/winn053/money-app.git

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tim's Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="p-5 text-center background-blue text-green">
+      <div class="container py-5">
+        <h1 class="text-white">Portfolio</h1>
+        <p class="col-lg-8 mx-auto lead">
+          Here are some projects I've worked on.
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section id="portfolio-apps">
+        <div class="container px-4 py-5" id="custom-cards">
+
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          <div class="col">
+            <div
+              class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg background-blue"
+            >
+              <a href="./projects/money-app/index.html" role="button">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                  <h3 class="mb-4 lh-1 fw-bold card-text-title-color">
+                    Money Spending App
+                  </h3>
+                  <ul class="d-flex flex-column list-unstyled mt-auto">
+                    <li class="d-flex align-items-left me-3">
+                      <small class="text-white"
+                        >Enter spending values and view statistics, sortable history. Saves data to local storage. Import/Export JSON files.</small
+                      >
+                    </li>
+                    <li class="d-flex align-items-left me-3 pt-3">
+                      <img src="./images/Screenshot money-app.png" alt="" height="175" loading="lazy">
+                    </li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
