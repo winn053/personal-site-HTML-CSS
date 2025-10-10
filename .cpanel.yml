@@ -3,7 +3,7 @@ deployment:
   tasks:
     - /bin/rm -Rf /home/timwinne/public_html/_old
     - /bin/cp -R /home/timwinne/public_html /home/timwinne/public_html/_old
-    - /bin/rsync -a --exclude '.git' --exclude '.well-known' --delete-after /home/timwinne/repositories/personal-site-HTML-CSS-2/ /home/timwinne/public_html/
+    - /bin/rsync -av --exclude '.git' --exclude '.well-known' --delete-after /home/timwinne/repositories/personal-site-HTML-CSS-2/ /home/timwinne/public_html/
     - /bin/chmod 755 /home/timwinne/public_html
     - /bin/find /home/timwinne/public_html -type d -exec /bin/chmod 755 '{}' \;
     - /bin/find /home/timwinne/public_html -type f -exec /bin/chmod 644 '{}' \;
