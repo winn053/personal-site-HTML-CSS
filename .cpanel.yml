@@ -2,7 +2,7 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/timwinne/public_html/
-    - export REPOPATH=/home/timwinne/repositories/personal-site-HTML-CSS
+    - export REPOPATH=/home/timwinne/repositories/personal-site-HTML-CSS-2
     - /bin/rm -Rf ${DEPLOYPATH}_old
     - /bin/cp -R ${DEPLOYPATH} ${DEPLOYPATH}_old
     - /bin/rsync -aP --exclude '.git' --exclude '.well-known' ${REPOPATH}/ ${DEPLOYPATH} --delete-after
