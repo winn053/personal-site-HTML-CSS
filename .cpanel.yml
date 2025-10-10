@@ -1,11 +1,9 @@
     ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/timwinne/public_html/
-    - export REPOPATH=/home/timwinne/repositories/personal-site-HTML-CSS-2
-    - /bin/rm -Rf ${DEPLOYPATH}_old
-    - /bin/cp -R ${DEPLOYPATH} ${DEPLOYPATH}_old
-    - /bin/rsync -a --exclude '.git' --exclude '.well-known' --delete-after /home/timwinne/repositories/personal-site-HTML-CSS-2/ /home/timwinne/public_html/
-    - /bin/chmod 755 ${DEPLOYPATH}
-    - /bin/find ${DEPLOYPATH} -type d -exec /bin/chmod 755 '{}' \;
-    - /bin/find ${DEPLOYPATH} -type f -exec /bin/chmod 644 '{}' \;
+    - /bin/echo "Starting deployment" > /home/timwinne/deploy_log.txt
+    - /bin/ls -la /home/timwinne/repositories/personal-site-HTML-CSS/ >> /home/timwinne/deploy_log.txt
+    - /bin/echo "About to run rsync" >> /home/timwinne/deploy_log.txt
+    - /bin/rsync -a --exclude '.git' --exclude '.well-known' --delete-after /home/timwinne/repositories/personal-site-HTML-CSS/ /home/timwinne/public_html/ 2>> /home/timwinne/deploy_log.txt
+    - /bin/echo "Rsync exit code: $?" >> /home/timwinne/deploy_log.txt
+    - /bin/echo "Deployment complete" >> /home/timwinne/deploy_log.txt
