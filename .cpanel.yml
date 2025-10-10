@@ -2,8 +2,5 @@
 deployment:
   tasks:
     - /bin/echo "Starting deployment" > /home/timwinne/deploy_log.txt
-    - /bin/ls -la /home/timwinne/repositories/personal-site-HTML-CSS-2/ >> /home/timwinne/deploy_log.txt
-    - /bin/echo "About to run rsync" >> /home/timwinne/deploy_log.txt
-    - /bin/rsync -a --exclude '.git' --exclude '.well-known' --delete-after /home/timwinne/repositories/personal-site-HTML-CSS-2/ /home/timwinne/public_html/ 2>> /home/timwinne/deploy_log.txt
-    - /bin/echo "Rsync exit code: $?" >> /home/timwinne/deploy_log.txt
+    - /bin/rsync -av --exclude '.git' --exclude '.well-known' --delete-after /home/timwinne/repositories/personal-site-HTML-CSS-2/ /home/timwinne/public_html/ >> /home/timwinne/deploy_log.txt 2>&1
     - /bin/echo "Deployment complete" >> /home/timwinne/deploy_log.txt
