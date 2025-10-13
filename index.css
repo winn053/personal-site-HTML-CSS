@@ -18,7 +18,7 @@ body {
 }
 
 .background-green {
-  background-color: var(--main-green-color);
+  background-color: var(--main-green-color) !important;
 }
 
 .background-blue {
@@ -58,6 +58,6 @@ body {
   color: var(--main-green-color);
 }
 
-.rounded-button {
-  border-radius: 100px;
+.button:hover {
+  opacity: 90%;
 }
