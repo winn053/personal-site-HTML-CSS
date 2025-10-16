@@ -1,6 +1,7 @@
     ---
 deployment:
   tasks:
+    - cd /home/timwinne/repositories/personal-site-HTML-CSS-2 && git submodule update --init --recursive
     - /bin/rm -Rf /home/timwinne/public_html/_old
     - /bin/cp -R /home/timwinne/public_html /home/timwinne/public_html/_old
     - /bin/rsync -a --exclude '.git' --exclude '.well-known' --delete-after /home/timwinne/repositories/personal-site-HTML-CSS-2/ /home/timwinne/public_html/
