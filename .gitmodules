@@ -1,3 +1,6 @@
 [submodule "projects/money-app"]
 	path = projects/money-app
 	url = https://github.com/winn053/money-app.git
+[submodule "Simon-game-challenge-jquery"]
+	path = projects/Simon-game-challenge-jquery
+	url = https://github.com/winn053/Simon-game-challenge-jquery
